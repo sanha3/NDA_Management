@@ -1,0 +1,280 @@
+.container {
+    width: 80%;
+     /* Increased the width for better table layout */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    font-size: 28px; /* Increased font size */
+    color: #6a0dad;
+  }
+  
+  .underLine {
+    width: 100%;
+    height: 2px;
+    background-color: #6a0dad;
+    margin: 10px 0;
+  }
+  
+  .inputs {
+    margin-bottom: 20px;
+    width: 300px;
+    margin-left: 410px;
+    
+  }
+  
+  .input {
+    margin-bottom: 10px;
+  }
+  
+  .input input {
+    width: 100%;
+    padding: 12px; /* Increased padding for better spacing */
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    font-size: 16px;
+  }
+  
+  .submit-container {
+    display: flex;
+    justify-content: center; /* Center both buttons */
+    margin-bottom: 20px;
+    margin-left: 0px;  /* Remove unnecessary large margins */
+    margin-right: 0px;
+  }
+  
+  .submit {
+    padding: 10px 20px;  /* Adjust padding to make buttons smaller */
+    border: none;
+    border-radius: 5px;
+    background-color: #6a0dad;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;  /* Set a fixed width for both buttons */
+    margin-right: 10px;
+  
+  
+    
+  }
+  
+  .submit.gray {
+    background-color: #d3d3d3;  /* Style for the 'Login' button */
+  }
+  
+  .submit:hover:not(.gray) {
+    background-color: #4b0082;  /* Add hover effect for 'Sign Up' */
+  }
+  
+  .submit:last-child {
+    margin-right: 0;
+  }
+  
+  
+  .main-action {
+    width: 200px; /* Set a fixed width for the button */
+    background-color: #6a0dad;
+    padding: 10px 20px; /* Adjust padding to make the button smaller */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px auto; /* Centers the button horizontally */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .main-action:hover {
+    background-color: #4b0082;
+  }
+  
+  
+  .forgot-password {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .forgot-password span {
+    color: #6a0dad;
+    cursor: pointer;
+  }
+  
+  .forgot-password span:hover {
+    text-decoration: underline;
+  }
+  
+  /* Table styles for NDA Records */
+  .nda-options {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  .nda-options h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #6a0dad;
+  }
+  
+  /* NDA table specific styles */
+  .nda-table {
+    width: 100%;
+    table-layout: auto; /* Allows table to resize automatically */
+    margin-top: 20px;
+    border-collapse: collapse;
+    word-wrap: break-word; /* Wrap long text */
+  }
+  
+  /* Set max-width for each column to make table responsive */
+  .nda-table th, .nda-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    max-width: 150px; /* Limits the width of columns */
+  }
+  
+  .nda-table th {
+    background-color: #6a0dad;
+    color: white;
+  }
+  
+  .nda-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .nda-table td {
+    color: #555;
+    word-wrap: break-word; /* Ensures text breaks in cells */
+  }
+  
+  /* Styling the second row details */
+  .nda-table tr:nth-child(2n) td {
+    background-color: #f9f9f9;
+    font-style: italic;
+  }
+  
+  .nda-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  
+  .nda-table td {
+    color: #555;
+  }
+  
+  .nda-table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Add space between Modify NDA and Delete NDA buttons */
+  .nda-table button {
+    padding: 6px 12px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;  /* Adds vertical spacing between buttons */
+    width: 100%; /* Makes sure buttons stay the same width */
+  }
+  
+  .nda-table button:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Set fixed size for Open File button */
+  .open-file-button {
+    width: 100px;  /* Set desired fixed width */
+    height: 40px;  /* Set desired fixed height */
+    text-align: center; /* Centers text inside the button */
+    padding: 6px 12px; 
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .open-file-button:hover {
+    background-color: #4b0082;
+  }
+  
+  
+  
+  .nda-table button:hover {
+    background-color: #4b0082;
+  }
+  
+  /* Customer form styles */
+  .customer-form {
+    margin-top: 20px;
+    text-align: left;
+    
+  }
+  
+  .customer-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-gap: 30px; /* Adds space between grid items */
+    margin-bottom: 20px;
+  }
+  
+  
+  .customer-form input {
+    margin-bottom: 12px;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    
+  }
+  
+  .customer-form button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .customer-form button:hover {
+    background-color: #4b0082;
+  }
+  
+  /* Modify NDA Section */
+  .modify-button {
+    background-color: #ffa500;
+  }
+  
+  .modify-button:hover {
+    background-color: #ff8c00;
+  }
+  
+  .delete-button {
+    background-color: #ff4500;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff0000;
+  }
+  
+  .logged-in h2 {
+    font-size: 24px;
+    color: #6a0dad;
+    margin-bottom: 20px;
+  }
+  
